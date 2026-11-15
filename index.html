@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>GoatedBuy spreadsheet | Finds, QC &amp; Shipping Guide</title>
+  <meta name="description" content="Use this GoatedBuy spreadsheet guide to browse ten CAFANS categories, compare listing details, review QC photos, and estimate your total shipping cost.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GoatedBuy spreadsheet | Finds, QC &amp; Shipping Guide">
+  <meta property="og:description" content="Browse ten categories and learn what to check before ordering through a shopping agent.">
+  <meta name="theme-color" content="#f6f3ed">
+  <!-- Research note for the editor: Google’s first page could not be verified. Relevant search results from ten distinct sites informed the themes below: goated-buy.com, goatedbuyindex.com, qcradar.com, mickeybuys.com, goatedspreadsheet.com, goatedbuysheet.net, goatedbuyspreadsheets.com, goatedbuysheet.com, goatedbuyspreadsheet.net and w2clinks.com. -->
+  <!-- Secondary targets: GoatedBuy finds; GoatedBuy QC photos; GoatedBuy shipping estimate; GoatedBuy buying guide. -->
+  <style>
+    :root{color-scheme:light;--paper:#f6f3ed;--ink:#202239;--muted:#535467;--rule:#ccc7bd;--accent:#d8ef82;--wash:#ece9f8}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    header .wrap,footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-block:1rem}
+    header,footer{border-block:1px solid var(--rule)}
+    a{color:inherit;text-underline-offset:.2em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #514391;outline-offset:4px}
+    .wordmark{font-weight:850;letter-spacing:.13em;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1.15fr 1fr;align-items:stretch;margin-block:1.5rem 2.5rem;background:var(--ink);color:white;border-radius:1rem;overflow:hidden}
+    .intro{padding:clamp(1.5rem,5vw,4.5rem)}
+    h1,h2,h3{line-height:1.12;margin:0 0 .75rem}
+    h1{font-size:clamp(2.5rem,6.5vw,5.25rem);letter-spacing:-.055em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.65rem,3.6vw,2.6rem);letter-spacing:-.035em}
+    h3{font-size:1.2rem}
+    .intro p{color:#e5e3f0;max-width:42ch}
+    .button{display:inline-block;background:var(--accent);color:var(--ink);font-weight:750;padding:.65rem 1rem;border-radius:.4rem;text-decoration:none}
+    .button:hover{background:#e6f6ac}
+    figure{margin:0}
+    .hero figure{display:grid;align-content:center;background:#e9e6f2;color:var(--ink);padding:1rem}
+    img{display:block;width:100%;height:auto}
+    .hero img{max-height:24rem;aspect-ratio:1.2;object-fit:contain}
+    figcaption{padding:.5rem .35rem;font-size:.875rem;color:var(--muted)}
+    section{margin-block:2.5rem}
+    .categories,.gallery,.topics{display:grid;gap:.8rem;padding:0}
+    .categories{grid-template-columns:repeat(5,minmax(0,1fr));list-style:none}
+    .categories a{display:block;height:100%;border:1px solid var(--rule);border-radius:.45rem;padding:.7rem .8rem;background:#fffdf8;font-weight:650;text-decoration:none;overflow-wrap:anywhere}
+    .categories a:hover{border-color:var(--ink);background:var(--accent)}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery figure{background:#fffdf8;border:1px solid var(--rule);border-radius:.6rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:white}
+    .topics{grid-template-columns:repeat(3,minmax(0,1fr))}
+    article{padding:1.2rem;background:var(--wash);border-radius:.6rem}
+    article p:last-child{margin-bottom:0}
+    .workflow{padding-left:1.4rem;max-width:76ch}
+    .workflow li{padding:.3rem 0}
+    details{border-top:1px solid var(--rule);padding:.75rem 0}
+    details:last-child{border-bottom:1px solid var(--rule)}
+    details p{max-width:76ch;margin:.6rem 0 .25rem}
+    summary{cursor:pointer;font-weight:700}
+    .note,footer{color:var(--muted);font-size:.9rem}
+    @media(max-width:760px){.hero,.topics{grid-template-columns:1fr}.hero img{max-height:17rem}.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:420px){.categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "inLanguage":"en",
+    "name":"GoatedBuy spreadsheet | Finds, QC & Shipping Guide",
+    "description":"An independent guide to browsing CAFANS categories, comparing listings, reviewing QC photos, and estimating shipping costs.",
+    "mainEntity":[
+      {"@type":"Question","name":"What is a GoatedBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"It is a curated directory of product references or seller links that helps shoppers find items to review before ordering through a shopping agent."}},
+      {"@type":"Question","name":"How do I check if a product listing is still active?","acceptedAnswer":{"@type":"Answer","text":"Open the seller listing, choose the exact size and color, and confirm that the variant is available before submitting a purchase request."}},
+      {"@type":"Question","name":"What should I check in QC photos?","acceptedAnswer":{"@type":"Answer","text":"Check the selected size and color, visible defects, and measurements where available. Request a clearer photo if an important detail is missing."}},
+      {"@type":"Question","name":"How can I estimate international shipping?","acceptedAnswer":{"@type":"Answer","text":"Use your destination, estimated packed weight and dimensions, and a current shipping quote. Check whether the carrier uses volumetric weight and which fees or taxes the quote includes."}},
+      {"@type":"Question","name":"Is this an official GoatedBuy or brand website?","acceptedAnswer":{"@type":"Answer","text":"This is an independent shopping guide. Category links lead to CAFANS, and brand photos are editorial references."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/ipwmg/">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="wordmark" href="https://www.cafans.com">CAFANS</a>
+      <a href="https://www.cafans.com">Visit the CAFANS catalog</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="intro">
+        <h1 id="page-title">GoatedBuy spreadsheet</h1>
+        <p>Browse CAFANS categories, then check the seller listing, size and color, warehouse photos, and shipping quote before you order.</p>
+        <a class="button" href="https://www.cafans.com">Browse CAFANS finds</a>
+      </div>
+      <figure>
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco%2Cc_scale%2Cw_300%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/f888b4a3-a02a-420d-93e3-cb33c3bb30ac/AIR%2BFORCE%2B1%2B%2707.png" alt="White Nike Air Force 1 ’07 sneaker" width="600" height="500" fetchpriority="high">
+        <figcaption>Nike Air Force 1 ’07 · Footwear reference</figcaption>
+      </figure>
+    </section>
+    <nav aria-labelledby="categories-title">
+      <h2 id="categories-title">Shop by category</h2>
+      <ul class="categories">
+        <li><a href="https://cafans.com/category-911-Shoes.html">Shoes</a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters</a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts</a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Jackets</a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pants/Shorts</a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Headwear</a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underwear/underpants</a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Jersey</a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessories</a></li>
+      </ul>
+    </nav>
+    <section aria-labelledby="reference-title">
+      <h2 id="reference-title">Style references</h2>
+      <p class="note">Editorial brand photos illustrate silhouettes and finishes. Check individual CAFANS listings for current availability.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=480&amp;wid=480&amp;fmt=webp" alt="Front view of a blue Louis Vuitton monogram denim jacket" width="480" height="480" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Monogram denim</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" alt="Beige and brown Gucci GG canvas baseball cap" width="640" height="640" loading="lazy" decoding="async">
+          <figcaption>Gucci · GG canvas cap</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/mini-clic-chaine-d-ancre-grand-apparat-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF--205421F%20C7-front-wm-1-0-0-1000-1000_g.jpg?wid=480" alt="Hermès bracelet with a dark enamel band and gold-tone hardware" width="480" height="480" loading="lazy" decoding="async">
+          <figcaption>Hermès · Enamel bracelet</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.cn/is/image/diorprod/B1310PTCRSD301_SBG_E01-3?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;hei=520&amp;scale=1&amp;wid=480" alt="Gold-tone Dior Petit CD bracelet" width="480" height="520" loading="lazy" decoding="async">
+          <figcaption>Dior · Petit CD bracelet</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="buying-title">
+      <h2 id="buying-title">GoatedBuy buying guide</h2>
+      <ol class="workflow">
+        <li><strong>Shortlist your GoatedBuy finds.</strong> Save the seller product link, item reference, size chart, and color option together. Check the exact variant before submitting it to your agent.</li>
+        <li><strong>Keep a comparison record.</strong> Note the listed item price, domestic delivery charge, seller stock status, and the date you checked each entry. This makes it easier to spot a changed listing.</li>
+        <li><strong>Review the warehouse inspection.</strong> Compare the order notes with the photos and measurements. If something differs, check the seller return window and the agent’s return process before approving shipment.</li>
+        <li><strong>Compare quotes for the packed parcel.</strong> Check actual and volumetric weight, tracking, and any optional insurance. Record the quote currency and review which costs are payable separately.</li>
+      </ol>
+    </section>
+    <section aria-labelledby="topics-title">
+      <h2 id="topics-title">Fit, quality and shipping</h2>
+      <div class="topics">
+        <article>
+          <h3>Sneaker sizing and clothing fit</h3>
+          <p>Compare sneaker insole length with a pair you already wear. For apparel, lay a similar garment flat and measure chest width, sleeve length, and shoulder width. For pants, compare waist and inseam. Check whether the garment measurements are in centimeters or inches.</p>
+        </article>
+        <article>
+          <h3>How to read GoatedBuy QC photos</h3>
+          <p>Compare sneaker outsole wear and stitching, jacket seams and zippers, or a cap’s brim and rear closure. For jewelry, look for finish marks and confirm that the clasp closes. Ask for a close-up or a ruler photo when the angle makes a detail hard to judge.</p>
+        </article>
+        <article>
+          <h3>Building a GoatedBuy shipping estimate</h3>
+          <p>Start with item cost, domestic freight, any agent fees, and international shipping. Compare parcel consolidation and separate parcels using packed dimensions. For deliveries to the US, UK, or EU, confirm destination coverage and check whether the quote includes applicable import charges.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <details open>
+        <summary>What is a GoatedBuy spreadsheet?</summary>
+        <p>It is a curated directory of product references or seller links that helps shoppers find items to review before ordering through a shopping agent.</p>
+      </details>
+      <details>
+        <summary>How do I check if a product listing is still active?</summary>
+        <p>Open the seller listing, choose the exact size and color, and confirm that the variant is available before submitting a purchase request.</p>
+      </details>
+      <details>
+        <summary>What should I check in QC photos?</summary>
+        <p>Check the selected size and color, visible defects, and measurements where available. Request a clearer photo if an important detail is missing.</p>
+      </details>
+      <details>
+        <summary>How can I estimate international shipping?</summary>
+        <p>Use your destination, estimated packed weight and dimensions, and a current shipping quote. Check whether the carrier uses volumetric weight and which fees or taxes the quote includes.</p>
+      </details>
+      <details>
+        <summary>Is this an official GoatedBuy or brand website?</summary>
+        <p>This is an independent shopping guide. Category links lead to CAFANS, and brand photos are editorial references.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>Independent editorial shopping guide</span>
+      <a href="https://www.cafans.com">CAFANS homepage</a>
+    </div>
+  </footer>
+</body>
+</html>
